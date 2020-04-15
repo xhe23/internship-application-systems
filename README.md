@@ -47,3 +47,19 @@ You may use libraries (both built-in and installed via package managers) and sys
 1. Add support for both IPv4 and IPv6
 2. Allow to set TTL as an argument and report the corresponding "time exceeded” ICMP messages
 3. Any additional features listed in the ping man page or which you think would be valuable
+
+## Usage
+
+- usage:  
+
+
+    go run ping.go [-h] [-v] [-c count] [-i wait] [-m ttl] [-t timeout] host
+
+
+- options:        
+    - -h help
+    - -v IPv6
+    - -c set number of requests
+    - -i wait n milliseconds between requests
+    - -m set maximum ttl limit
+    - -t set maximum timeout in milliseconds
